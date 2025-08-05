@@ -1052,6 +1052,34 @@ h3 {
 .addon-item.featured-addon {
   border: 2px solid #15b4a2;
   background: rgba(21, 180, 162, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.addon-item.featured-addon .addon-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.addon-item.featured-addon .addon-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.addon-item.featured-addon .addon-description {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  line-height: 1.4;
+}
+
+.addon-item.featured-addon .addon-price {
+  font-weight: 600;
+  font-size: 1.2rem;
+  white-space: nowrap;
 }
 
 .addon-name {
@@ -1317,7 +1345,7 @@ h3 {
   padding: 1rem 1.5rem;
   border-radius: 50px;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1rem;
   transition: all 0.3s ease;
   display: flex;
@@ -1399,6 +1427,18 @@ h3 {
   text-align: center;
   color: rgba(255, 255, 255, 0.6);
   font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-bottom a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  color: #15b4a2;
 }
 
 /* Sections spéciales (services et tarifs) */
@@ -1569,8 +1609,9 @@ h3 {
 
   /* Hero responsive */
   .hero {
-    min-height: calc(100vh - 80px);
-    margin-top: 0;
+    padding: 2rem 0;
+    min-height: calc(100vh - 70px);
+    margin-top: 96px !important;
   }
 
   .hero-content {
@@ -1633,7 +1674,7 @@ h3 {
   }
 
   .formation-text {
-    display: none;
+    font-size: 0.8rem;
   }
 
   /* Add-ons padding réduit */
@@ -1846,6 +1887,10 @@ h3 {
     font-size: 0.8rem;
   }
 
+  .formation-text {
+    font-size: 0.7rem;
+  }
+
   /* Add-ons padding encore plus réduit */
   .addons-category {
     padding: 0.8rem;
@@ -2016,24 +2061,25 @@ h3 {
   }
 
   .phrase-container {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     flex-direction: row;
-    gap: 0.6rem;
-    padding: 0 0.8rem;
+    gap: 0.4rem;
+    padding: 0 0.5rem;
+    flex-wrap: nowrap;
   }
 
   .word-container {
-    min-width: 160px;
-    height: 1.8rem;
+    min-width: 120px;
+    height: 1.6rem;
   }
 
   .word {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .word-bubble {
-    min-width: 140px;
-    max-width: 220px;
+    min-width: 100px;
+    max-width: 180px;
   }
 
   .section-content h2 {

@@ -269,7 +269,7 @@ gsap.utils.toArray(".pricing-item").forEach((pricing, i) => {
 
 // Animation des autres éléments
 gsap.utils
-  .toArray(".step, .guarantee, .addon-item, .module-item")
+  .toArray(".step, .guarantee, .addon-item:not(.featured-addon), .module-item")
   .forEach((item, i) => {
     gsap.from(item, {
       opacity: 0,
@@ -285,6 +285,22 @@ gsap.utils
       delay: i * 0.02,
     });
   });
+
+// Animation spécifique pour le featured-addon (plus tôt)
+gsap.utils.toArray(".addon-item.featured-addon").forEach((item) => {
+  gsap.from(item, {
+    opacity: 0,
+    y: 15,
+    duration: 0.3,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: item,
+      start: "top 90%",
+      end: "bottom 10%",
+      toggleActions: "play none none reverse",
+    },
+  });
+});
 
 // Animation des titres de sections
 gsap.utils.toArray(".section-content h2").forEach((title, i) => {

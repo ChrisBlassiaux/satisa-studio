@@ -1293,74 +1293,14 @@ h3 {
 
 .contact-form {
   background: white;
-  padding: 2.5rem;
+  padding: 2rem;
   border-radius: 15px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
 }
 
-.form-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-
-.form-group {
-  margin-bottom: 1.5rem;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-weight: 500;
-  color: #00272d;
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-  width: 100%;
-  padding: 0.8rem;
-  border: 2px solid #e0e0e0;
-  border-radius: 6px;
-  font-size: 1rem;
-  transition: border-color 0.3s ease;
-}
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: #2ee5cd;
-}
-
-.submit-btn {
-  background: #002730;
-  color: white;
-  padding: 1.2rem 2rem;
-  border: none;
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 1.1rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.submit-btn:hover {
-  background: #13a595;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0, 39, 48, 0.3);
-}
-
-.submit-subtitle {
-  font-size: 0.8rem;
-  opacity: 0.8;
-  font-weight: 400;
+.contact-form iframe {
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 /* Bouton SATISA Formation */
@@ -1657,28 +1597,28 @@ h3 {
 
   /* Bulles du hero mieux positionnées */
   .floating-card:nth-child(1) {
-    top: 10%;
+    top: 5%;
     left: 5%;
   }
 
   .floating-card:nth-child(2) {
-    top: 40%;
-    right: 10%;
-  }
-
-  .floating-card:nth-child(3) {
-    bottom: 10%;
-    left: 15%;
-  }
-
-  .floating-card:nth-child(4) {
-    top: 60%;
+    top: 25%;
     right: 5%;
   }
 
+  .floating-card:nth-child(3) {
+    bottom: 15%;
+    left: 10%;
+  }
+
+  .floating-card:nth-child(4) {
+    top: 45%;
+    right: 15%;
+  }
+
   .floating-card:nth-child(5) {
-    top: 10%;
-    right: 20%;
+    top: 65%;
+    right: 5%;
   }
 
   /* Bouton SATISA Formation moins visible */
@@ -1706,11 +1646,11 @@ h3 {
   }
 
   .sticky-wrapper {
-    top: 80px;
+    top: 70px;
   }
 
   .scroll-content {
-    margin-top: calc(80px + 80px);
+    margin-top: calc(70px + 80px);
   }
 
   .sticky-content h1 {
@@ -1718,23 +1658,24 @@ h3 {
   }
 
   .phrase-container {
-    font-size: 1.8rem;
-    flex-direction: column;
-    gap: 0.5rem;
+    font-size: 1.6rem;
+    flex-direction: row;
+    gap: 0.8rem;
+    padding: 0 1rem;
   }
 
   .word-container {
-    min-width: 250px;
-    height: 2.5rem;
+    min-width: 200px;
+    height: 2.2rem;
   }
 
   .word {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   .word-bubble {
-    min-width: 220px;
-    max-width: 350px;
+    min-width: 180px;
+    max-width: 300px;
   }
 
   .section-content h2 {
@@ -1790,6 +1731,10 @@ h3 {
     gap: 2rem;
   }
 
+  .contact-form {
+    padding: 1.5rem;
+  }
+
   .hero-content {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -1815,10 +1760,6 @@ h3 {
   .footer-content {
     grid-template-columns: 1fr;
     gap: 2rem;
-  }
-
-  .form-row {
-    grid-template-columns: 1fr;
   }
 
   section {
@@ -1866,28 +1807,32 @@ h3 {
 
   /* Bulles encore mieux positionnées */
   .floating-card:nth-child(1) {
-    top: 5%;
-    left: 2%;
+    top: 3%;
+    left: 3%;
   }
 
   .floating-card:nth-child(2) {
-    top: 35%;
-    right: 5%;
+    top: 20%;
+    right: 3%;
   }
 
   .floating-card:nth-child(3) {
-    bottom: 5%;
-    left: 10%;
+    bottom: 10%;
+    left: 5%;
   }
 
   .floating-card:nth-child(4) {
-    top: 50%;
-    right: 5%;
+    top: 40%;
+    right: 8%;
   }
 
   .floating-card:nth-child(5) {
-    top: 8%;
-    right: 15%;
+    top: 60%;
+    right: 3%;
+  }
+
+  .contact-form {
+    padding: 1rem;
   }
 
   /* Bouton SATISA Formation encore moins visible */
@@ -2059,33 +2004,36 @@ h3 {
   }
 
   .sticky-wrapper {
-    top: 65px;
+    top: 60px;
   }
 
   .scroll-content {
-    margin-top: calc(70px + 80px);
+    margin-top: calc(60px + 80px);
   }
 
   .sticky-content h1 {
-    font-size: 1.3rem;
-  }
-
-  .phrase-container {
-    font-size: 1.4rem;
-  }
-
-  .word-container {
-    min-width: 200px;
-    height: 2rem;
-  }
-
-  .word {
     font-size: 1.2rem;
   }
 
+  .phrase-container {
+    font-size: 1.3rem;
+    flex-direction: row;
+    gap: 0.6rem;
+    padding: 0 0.8rem;
+  }
+
+  .word-container {
+    min-width: 160px;
+    height: 1.8rem;
+  }
+
+  .word {
+    font-size: 1.1rem;
+  }
+
   .word-bubble {
-    min-width: 180px;
-    max-width: 250px;
+    min-width: 140px;
+    max-width: 220px;
   }
 
   .section-content h2 {

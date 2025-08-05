@@ -650,65 +650,39 @@
                 </div>
               </div>
             </div>
-            <form class="contact-form">
-              <div class="form-row">
-                <div class="form-group">
-                  <label>Prénom *</label>
-                  <input type="text" required />
-                </div>
-                <div class="form-group">
-                  <label>Nom *</label>
-                  <input type="text" required />
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group">
-                  <label>Email *</label>
-                  <input type="email" required />
-                </div>
-                <div class="form-group">
-                  <label>Téléphone</label>
-                  <input type="tel" />
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group">
-                  <label>Type de projet *</label>
-                  <select required>
-                    <option value="">Sélectionnez...</option>
-                    <option value="vitrine">Site vitrine</option>
-                    <option value="landing">Landing page</option>
-                    <option value="refonte">Refonte de site</option>
-                    <option value="ecommerce">E-commerce</option>
-                    <option value="sur-mesure">Projet sur-mesure</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label>Budget estimé *</label>
-                  <select required>
-                    <option value="">Sélectionnez...</option>
-                    <option value="1000">Moins de 1000€</option>
-                    <option value="2000">1000€ - 2000€</option>
-                    <option value="5000">2000€ - 5000€</option>
-                    <option value="5000+">Plus de 5000€</option>
-                  </select>
-                </div>
-              </div>
-              <div class="form-group">
-                <label>Détails de votre projet *</label>
-                <textarea
-                  rows="4"
-                  placeholder="Décrivez votre projet, vos objectifs, votre activité..."
-                  required
-                ></textarea>
-              </div>
-              <button type="submit" class="submit-btn">
-                <span>Obtenir mon devis gratuit</span>
-                <span class="submit-subtitle"
-                  >Réponse en 24h • Sans engagement</span
-                >
-              </button>
-            </form>
+            <div class="contact-form">
+              <iframe
+                data-tally-src="https://tally.so/embed/wgo45D?alignLeft=1&hideTitle=1&dynamicHeight=1"
+                loading="lazy"
+                width="100%"
+                height="378"
+                frameborder="0"
+                marginheight="0"
+                marginwidth="0"
+                title="Démarrons votre projet"
+              ></iframe>
+              <script>
+                var d = document,
+                  w = "https://tally.so/widgets/embed.js",
+                  v = function () {
+                    "undefined" != typeof Tally
+                      ? Tally.loadEmbeds()
+                      : d
+                          .querySelectorAll("iframe[data-tally-src]:not([src])")
+                          .forEach(function (e) {
+                            e.src = e.dataset.tallySrc;
+                          });
+                  };
+                if ("undefined" != typeof Tally) v();
+                else if (d.querySelector('script[src="' + w + '"]') == null) {
+                  var s = d.createElement("script");
+                  (s.src = w),
+                    (s.onload = v),
+                    (s.onerror = v),
+                    d.body.appendChild(s);
+                }
+              </script>
+            </div>
           </div>
         </div>
       </section>

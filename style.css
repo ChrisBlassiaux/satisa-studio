@@ -125,7 +125,54 @@ body {
   padding: 0 2rem;
   position: relative;
   overflow: hidden;
-  margin-top: 80px !important; /* Ajouter une marge pour compenser la navbar fixe */
+  margin-top: 80px !important;
+}
+
+/* Hero Background avec formes animées */
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.hero-shapes {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.shape {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  animation: float 6s ease-in-out infinite;
+}
+
+.shape-1 {
+  width: 200px;
+  height: 200px;
+  top: 10%;
+  right: 10%;
+  animation-delay: 0s;
+}
+
+.shape-2 {
+  width: 150px;
+  height: 150px;
+  bottom: 20%;
+  left: 5%;
+  animation-delay: 2s;
+}
+
+.shape-3 {
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  right: 20%;
+  animation-delay: 4s;
 }
 
 .hero-content {
@@ -135,6 +182,31 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+/* Hero Badge */
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  padding: 0.5rem 1.5rem;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+}
+
+.hero-badge span:first-child {
+  color: #15b4a2;
+  font-weight: 600;
+}
+
+.hero-badge span:last-child {
+  opacity: 0.9;
 }
 
 .hero-title {
@@ -144,9 +216,16 @@ body {
   line-height: 1.2;
 }
 
+.hero-highlight {
+  background: linear-gradient(135deg, #15b4a2, #97e1dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 .hero-subtitle {
   font-size: 1.3rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   opacity: 0.9;
   line-height: 1.6;
 }
@@ -155,6 +234,7 @@ body {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  margin-bottom: 2rem;
 }
 
 .hero-button {
@@ -165,6 +245,20 @@ body {
   font-size: 1.1rem;
   transition: all 0.3s ease;
   display: inline-block;
+  position: relative;
+}
+
+.hero-button.primary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.button-subtitle {
+  font-size: 0.8rem;
+  opacity: 0.8;
+  font-weight: 400;
 }
 
 .hero-button.primary {
@@ -213,6 +307,9 @@ body {
   gap: 0.8rem;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
   animation: float 6s ease-in-out infinite;
+  flex-direction: column;
+  text-align: center;
+  min-width: 120px;
 }
 
 .floating-card:nth-child(1) {
@@ -231,6 +328,18 @@ body {
   bottom: 20%;
   left: 20%;
   animation-delay: 4s;
+}
+
+.floating-card:nth-child(4) {
+  top: 70%;
+  right: 10%;
+  animation-delay: 6s;
+}
+
+.floating-card:nth-child(5) {
+  top: 15%;
+  right: 25%;
+  animation-delay: 8s;
 }
 
 .card-icon {
@@ -1562,6 +1671,16 @@ h3 {
     left: 15%;
   }
 
+  .floating-card:nth-child(4) {
+    top: 60%;
+    right: 5%;
+  }
+
+  .floating-card:nth-child(5) {
+    top: 10%;
+    right: 20%;
+  }
+
   /* Bouton SATISA Formation moins visible */
   .satisa-formation-btn {
     bottom: 1rem;
@@ -1759,6 +1878,16 @@ h3 {
   .floating-card:nth-child(3) {
     bottom: 5%;
     left: 10%;
+  }
+
+  .floating-card:nth-child(4) {
+    top: 50%;
+    right: 5%;
+  }
+
+  .floating-card:nth-child(5) {
+    top: 8%;
+    right: 15%;
   }
 
   /* Bouton SATISA Formation encore moins visible */

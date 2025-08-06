@@ -3,14 +3,13 @@ gsap.registerPlugin(ScrollTrigger);
 
 // Configuration des mots et variables d'état
 const words = [
-  "multilingue.",
-  "facile.",
-  "accessible.",
-  "conforme.",
-  "animé.",
+  "multiplateforme.",
   "visible.",
-  "mobile.",
-  "webflow.",
+  "modifiable.",
+  "conforme.",
+  "accessible.",
+  "multilingue.",
+  "animé.",
 ];
 let currentWord = words[0];
 let currentAnimation = null;

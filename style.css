@@ -1427,6 +1427,22 @@ h3 {
   text-align: center;
   color: rgba(255, 255, 255, 0.6);
   font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-legal-link {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-legal-link:hover {
+  color: white;
+  text-decoration: underline;
 }
 
 /* Sections spéciales (services et tarifs) */
@@ -2584,5 +2600,145 @@ h3 {
   .language-flags,
   .animation-preview {
     min-width: auto;
+  }
+}
+
+/* Coûts d'hébergement */
+.hosting-section {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hosting-section h3 {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.hosting-notice {
+  background: linear-gradient(
+    135deg,
+    rgba(46, 229, 205, 0.1),
+    rgba(21, 180, 162, 0.1)
+  );
+  border-left: 4px solid #2ee5cd;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 10px rgba(46, 229, 205, 0.1);
+}
+
+.hosting-notice p {
+  margin: 0;
+  color: #2ee5cd;
+  font-size: 1.1rem;
+}
+
+.hosting-costs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.cost-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.cost-item h4 {
+  color: #2ee5cd;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.cost-price {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.hosting-types {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.hosting-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.type-name {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+}
+
+.type-price {
+  color: #2ee5cd;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.hosting-note {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.95rem;
+  margin: 0;
+  font-style: italic;
+}
+
+/* Responsive pour les coûts d'hébergement */
+@media (max-width: 768px) {
+  .hosting-costs {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .hosting-section {
+    padding: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .hosting-type {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hosting-section {
+    padding: 1rem;
+  }
+
+  .hosting-section h3 {
+    font-size: 1.3rem;
+  }
+
+  .cost-item {
+    padding: 1rem;
+  }
+
+  .cost-price {
+    font-size: 1.1rem;
+  }
+
+  .type-price {
+    font-size: 1rem;
   }
 }

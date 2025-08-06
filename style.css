@@ -103,7 +103,7 @@ body {
 }
 
 .nav-burger.active span:nth-child(1) {
-  transform: rotate(-45deg) translate(-5px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
 }
 
 .nav-burger.active span:nth-child(2) {
@@ -111,7 +111,7 @@ body {
 }
 
 .nav-burger.active span:nth-child(3) {
-  transform: rotate(45deg) translate(-5px, -6px);
+  transform: rotate(45deg) translate(-6px, -6px);
 }
 
 /* Sticky Header */
@@ -1581,7 +1581,7 @@ h3 {
   .nav-links {
     display: none;
     position: fixed;
-    top: 80px;
+    top: 65px;
     left: 0;
     right: 0;
     background: white;
@@ -1703,24 +1703,27 @@ h3 {
   }
 
   .phrase-container {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     flex-direction: row;
-    gap: 0.8rem;
+    gap: 0.6rem;
     padding: 0 1rem;
+    align-items: center;
   }
 
   .word-container {
-    min-width: 200px;
-    height: 2.2rem;
+    min-width: 180px;
+    height: 2rem;
   }
 
   .word {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    white-space: nowrap;
   }
 
   .word-bubble {
-    min-width: 180px;
-    max-width: 300px;
+    min-width: 160px;
+    max-width: 250px;
+    padding: 0.3rem 0.8rem;
   }
 
   .section-content h2 {
@@ -1836,6 +1839,13 @@ h3 {
     padding: 2rem 0;
     min-height: calc(100vh - 70px);
     margin-top: 96px !important;
+  }
+
+  .hero-badge {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.8rem 1.2rem;
+    text-align: center;
   }
 
   .hero-title {
@@ -2065,25 +2075,28 @@ h3 {
   }
 
   .phrase-container {
-    font-size: 1.1rem;
+    font-size: 1rem;
     flex-direction: row;
-    gap: 0.4rem;
+    gap: 0.3rem;
     padding: 0 0.5rem;
     flex-wrap: nowrap;
+    align-items: center;
   }
 
   .word-container {
-    min-width: 120px;
-    height: 1.6rem;
+    min-width: 140px;
+    height: 1.8rem;
   }
 
   .word {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    white-space: nowrap;
   }
 
   .word-bubble {
-    min-width: 100px;
-    max-width: 180px;
+    min-width: 130px;
+    max-width: 200px;
+    padding: 0.2rem 0.5rem;
   }
 
   .section-content h2 {

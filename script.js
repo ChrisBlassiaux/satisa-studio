@@ -389,3 +389,43 @@ gsap.utils.toArray("section").forEach((section, i) => {
     },
   });
 });
+
+// Compte à rebours jusqu'au 31 août 00h
+function updateCountdown() {
+  const now = new Date();
+  const targetDate = new Date("2025-08-31T00:00:00");
+
+  // Si la date est passée, afficher un message
+  if (now >= targetDate) {
+    document.getElementById("countdown").innerHTML =
+      '<span style="color: #15b4a2;">Offre terminée</span>';
+    return;
+  }
+
+  const timeLeft = targetDate - now;
+
+  const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+  const hours = Math.floor(
+    (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+  );
+  const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+  // Formatage du compte à rebours - toujours afficher les secondes
+  let countdownText = "";
+  if (days > 0) {
+    countdownText = `${days}j ${hours}h ${minutes}m ${seconds}s`;
+  } else if (hours > 0) {
+    countdownText = `${hours}h ${minutes}m ${seconds}s`;
+  } else if (minutes > 0) {
+    countdownText = `${minutes}m ${seconds}s`;
+  } else {
+    countdownText = `${seconds}s`;
+  }
+
+  document.getElementById("countdown").textContent = countdownText;
+}
+
+// Mettre à jour le compte à rebours toutes les secondes
+setInterval(updateCountdown, 1000);
+updateCountdown(); // Première mise à jour immédiate

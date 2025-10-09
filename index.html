@@ -3,26 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Satisa Studio - Création de sites web</title>
+    <title>
+      Satisa Studio - Sites web professionnels | Spécialiste formation
+    </title>
+    <link rel="icon" type="image/png" href="./favicon.png" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="favicon.png" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
   </head>
   <body>
-    <!-- Navigation Bar -->
+    <!-- Navigation -->
     <nav class="navbar">
       <div class="nav-container">
-        <div class="nav-logo">
-          <img src="logo.svg" alt="SATISA Formation" />
-        </div>
+        <a href="#" class="nav-logo">
+          <img src="./logo.svg" alt="Satisa Studio" />
+        </a>
         <div class="nav-links">
-          <a href="#process" class="nav-link">Notre méthode</a>
-          <a href="#services" class="nav-link">Nos services</a>
-          <a href="#tarifs" class="nav-link">Nos tarifs</a>
-          <a href="#contact" class="nav-button">Devis gratuit</a>
+          <a href="#services" class="nav-link">Services</a>
+          <a href="#tarifs" class="nav-link">Tarifs</a>
+          <a href="#contact" class="nav-cta">Devis gratuit</a>
         </div>
         <div class="nav-burger">
           <span></span>
@@ -32,970 +37,402 @@
       </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section class="hero">
-      <div class="hero-background">
-        <div class="hero-shapes">
-          <div class="shape shape-1"></div>
-          <div class="shape shape-2"></div>
-          <div class="shape shape-3"></div>
+      <div class="hero-container">
+        <div class="hero-badge">
+          <span class="material-symbols-outlined">public</span>
+          <span>Sites web professionnels</span>
+        </div>
+        <h1>Création de sites web professionnels</h1>
+        <p class="hero-subtitle">
+          Design moderne, livraison rapide, prix transparents
+        </p>
+        <div class="hero-cta-group">
+          <a href="#tarifs" class="btn-primary">Voir nos tarifs</a>
+          <a href="#contact" class="btn-secondary">Demander un devis</a>
         </div>
       </div>
-      <div class="hero-content">
-        <div class="hero-text">
-          <h1 class="hero-title">
-            Votre site web professionnel
-            <span class="hero-highlight">en 5 jours</span>
-          </h1>
-          <p class="hero-subtitle">Un site web qui travaille pour vous.</p>
-          <div class="hero-cta">
-            <a href="#contact" class="hero-button primary">
-              <span>Obtenir mon devis gratuit</span>
-              <span class="button-subtitle"
-                >Réponse en 24h • Sans engagement</span
-              >
-            </a>
-            <a href="#process" class="hero-button secondary">
-              Découvrir notre méthode
-            </a>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">Nos services</h2>
+          <p class="section-subtitle">
+            Des solutions web adaptées à tous les secteurs d'activité
+          </p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <span class="material-symbols-outlined">language</span>
+            </div>
+            <h3>Site vitrine</h3>
+            <p>
+              Site professionnel pour présenter votre activité et attirer de
+              nouveaux clients
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <span class="material-symbols-outlined">shopping_cart</span>
+            </div>
+            <h3>Site e-commerce</h3>
+            <p>
+              Boutique en ligne complète pour vendre vos produits et services
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <span class="material-symbols-outlined">school</span>
+            </div>
+            <h3>Site formation</h3>
+            <p>Plateforme dédiée aux formateurs et centres de formation</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <span class="material-symbols-outlined">refresh</span>
+            </div>
+            <h3>Refonte de site</h3>
+            <p>
+              Transformez votre site existant en une vitrine moderne et
+              performante
+            </p>
           </div>
         </div>
-        <div class="hero-visual">
-          <div class="hero-image">
-            <div class="floating-card card-1">
-              <div class="card-icon"><i class="fas fa-globe"></i></div>
-              <div class="card-text">Site multilingue</div>
+      </div>
+    </section>
+
+    <!-- Expertise Formation -->
+    <section class="expertise">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">Spécialistes de la formation</h2>
+          <p class="section-subtitle">
+            Une expertise unique dans le secteur de la formation professionnelle
+          </p>
+        </div>
+
+        <div class="expertise-content-wrapper">
+          <div class="expertise-intro">
+            <div class="expertise-intro-text">
+              <p>
+                Nous ne sommes pas qu'une agence web classique. Nous sommes
+                aussi <strong>Satisa Formation</strong>, spécialistes de la
+                conception et de la digitalisation de formations
+                professionnelles.
+              </p>
+              <p>
+                Cette double expertise nous permet de créer des sites web qui
+                répondent parfaitement aux enjeux spécifiques des formateurs,
+                centres de formation et organismes certifiants.
+              </p>
             </div>
-            <div class="floating-card card-2">
-              <div class="card-icon"><i class="fas fa-mobile-alt"></i></div>
-              <div class="card-text">Optimisé mobile</div>
+          </div>
+
+          <div class="expertise-highlight-card">
+            <div class="expertise-card-header">
+              <h3>
+                <span class="material-symbols-outlined">school</span>
+                <span>Offre combinée Formation + Site web</span>
+              </h3>
             </div>
-            <div class="floating-card card-3">
-              <div class="card-icon"><i class="fas fa-bolt"></i></div>
-              <div class="card-text">Performance</div>
-            </div>
-            <div class="floating-card card-4">
-              <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
-              <div class="card-text">Sécurisé</div>
-            </div>
-            <div class="floating-card card-5">
-              <div class="card-icon"><i class="fas fa-search"></i></div>
-              <div class="card-text">Référencement stratégique</div>
+            <div class="expertise-card-body">
+              <p>
+                Vous avez besoin à la fois de concevoir vos formations ET
+                d'avoir un site web professionnel ?
+              </p>
+              <div class="expertise-price-tag">
+                <div class="price-label">Profitez de notre offre combinée</div>
+                <div class="price-value">2 500 € HT</div>
+                <div class="price-original">au lieu de 2 900 €</div>
+              </div>
+              <a
+                href="https://www.satisa-formation.fr/centres-de-formation-et-ecoles/configurateur-de-votre-offre-sur-mesure"
+                target="_blank"
+                class="btn-primary"
+                >Découvrir l'offre combinée</a
+              >
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Sticky Header -->
-    <div class="sticky-wrapper">
-      <div class="sticky-content">
-        <div class="phrase-container">
-          Votre site sera
-          <div class="word-container">
-            <div class="word-bubble">
-              <div class="word" id="current-word">multiplateforme.</div>
+    <!-- Tarifs -->
+    <section id="tarifs" class="pricing">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">Nos tarifs transparents</h2>
+          <p class="section-subtitle">Des prix justes, sans surprise</p>
+        </div>
+
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <div class="pricing-badge">Site Web Professionnel</div>
+            <h3 class="pricing-title">Formule Essentielle</h3>
+            <div class="pricing-price">2 900 € HT</div>
+            <p class="pricing-price-sub">Livraison en 2-3 semaines</p>
+          </div>
+          <ul class="pricing-features">
+            <li>Site vitrine professionnel (Webflow)</li>
+            <li>Jusqu'à 7 pages</li>
+            <li>Design responsive (mobile, tablette, desktop)</li>
+            <li>Optimisation SEO de base</li>
+            <li>Formulaire de contact intégré</li>
+            <li>Pages et mentions légales incluses</li>
+            <li>3 rendez-vous inclus (Cadrage, Validation, Remise)</li>
+            <li>1 mois de support post-livraison</li>
+          </ul>
+          <a
+            href="#contact"
+            class="btn-primary"
+            style="width: 100%; text-align: center"
+            >Demander un devis</a
+          >
+        </div>
+
+        <div class="addons-section">
+          <h3 style="text-align: center; margin-bottom: 2rem; font-size: 2rem">
+            Options supplémentaires
+          </h3>
+
+          <div class="addons-grid">
+            <div class="addon-item">
+              <div class="addon-info">
+                <h4>E-commerce</h4>
+                <p>
+                  Vendez en ligne avec paiement sécurisé et gestion des
+                  commandes
+                </p>
+              </div>
+              <div class="addon-price">+1 500 €</div>
             </div>
+
+            <div class="addon-item">
+              <div class="addon-info">
+                <h4>SEO avancé</h4>
+                <p>
+                  Stratégie de mots-clés ciblée avec blog optimisé pour le
+                  référencement
+                </p>
+              </div>
+              <div class="addon-price">+1 000 €</div>
+            </div>
+
+            <div class="addon-item">
+              <div class="addon-info">
+                <h4>Google Business Profile</h4>
+                <p>
+                  Création ou optimisation de votre fiche établissement Google
+                </p>
+              </div>
+              <div class="addon-price">+300 €</div>
+            </div>
+
+            <div class="addon-item">
+              <div class="addon-info">
+                <h4>Multilingue</h4>
+                <p>Structure et navigation en plusieurs langues</p>
+              </div>
+              <div class="addon-price">+900 €</div>
+            </div>
+
+            <div class="addon-item">
+              <div class="addon-info">
+                <h4>Prise de rendez-vous</h4>
+                <p>
+                  Intégration d'un système de réservation en ligne (Calendly,
+                  TidyCal...)
+                </p>
+              </div>
+              <div class="addon-price">+150 €</div>
+            </div>
+
+            <div class="addon-item">
+              <div class="addon-info">
+                <h4>Contenus dynamiques</h4>
+                <p>
+                  Blog, actualités, événements ou portfolio avec gestion CMS
+                  simple
+                </p>
+              </div>
+              <div class="addon-price">+490 €</div>
+            </div>
+
+            <div class="addon-item formation-addon">
+              <div class="addon-badge">
+                <span class="material-symbols-outlined">school</span>
+                <span>Formation</span>
+              </div>
+              <div class="addon-info">
+                <h4>Inscriptions étudiants</h4>
+                <p>Formulaire d'inscription adapté à votre environnement</p>
+              </div>
+              <div class="addon-price">+300 €</div>
+            </div>
+
+            <div class="addon-item formation-addon">
+              <div class="addon-badge">
+                <span class="material-symbols-outlined">school</span>
+                <span>Formation</span>
+              </div>
+              <div class="addon-info">
+                <h4>Conformité Qualiopi</h4>
+                <p>Structure et parcours conformes au référentiel</p>
+              </div>
+              <div class="addon-price">+500 €</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <div id="contact" class="contact-wrapper">
+      <div class="section-container">
+        <div class="contact-intro">
+          <h3>Prêt à lancer votre projet ?</h3>
+          <p>
+            Que vous soyez dans la formation, le conseil, le commerce ou tout
+            autre secteur, nous créons le site web qui correspond à vos
+            ambitions.
+          </p>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-benefits">
+            <div class="benefit">
+              <span class="material-symbols-outlined">bolt</span>
+              <span>Devis gratuit en 24h</span>
+            </div>
+            <div class="benefit">
+              <span class="material-symbols-outlined">check_circle</span>
+              <span>Livraison rapide</span>
+            </div>
+            <div class="benefit">
+              <span class="material-symbols-outlined">star</span>
+              <span>Satisfaction garantie</span>
+            </div>
+            <div class="benefit">
+              <span class="material-symbols-outlined">support_agent</span>
+              <span>Support dédié</span>
+            </div>
+          </div>
+
+          <div class="contact-form-wrapper">
+            <iframe
+              data-tally-src="https://tally.so/embed/wgo45D?alignLeft=1&hideTitle=1&dynamicHeight=1"
+              loading="lazy"
+              width="100%"
+              height="378"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+              title="Démarrons votre projet"
+            ></iframe>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Scroll Content -->
-    <div class="scroll-content">
-      <section class="content-1">
-        <div class="section-content">
-          <div class="content-header">
-            <div class="content-icon"><i class="fas fa-mobile-alt"></i></div>
-            <h2>Un site adapté sur mobile</h2>
-          </div>
-          <div class="content-main">
-            <div class="content-text">
-              <div class="highlight-box">
-                <p>
-                  <strong
-                    >7 visiteurs sur 10 consultent votre site sur
-                    smartphone.</strong
-                  >
-                </p>
-              </div>
-              <p>
-                Votre site sera parfaitement adapté sur tous les appareils :
-                mobile, tablette et ordinateur.
-              </p>
-              <p>
-                Une expérience fluide et professionnelle, peu importe l'écran
-                utilisé.
-              </p>
-            </div>
-            <div class="content-visual">
-              <div class="device-mockup">
-                <div class="device mobile">
-                  <i class="fas fa-mobile-alt"></i>
-                </div>
-                <div class="device tablet">
-                  <i class="fas fa-tablet-alt"></i>
-                </div>
-                <div class="device desktop"><i class="fas fa-desktop"></i></div>
-              </div>
-            </div>
-          </div>
-          <div class="features-grid">
-            <div class="feature-card">
-              <div class="feature-icon"><i class="fas fa-sync-alt"></i></div>
-              <h3>Design responsive automatique</h3>
-              <p>Le site s'adapte automatiquement à la taille de l'écran</p>
-            </div>
-            <div class="feature-card">
-              <div class="feature-icon">
-                <i class="fas fa-hand-pointer"></i>
-              </div>
-              <h3>Navigation optimisée tactile</h3>
-              <p>Boutons et menus adaptés aux gestes sur mobile</p>
-            </div>
-            <div class="feature-card">
-              <div class="feature-icon"><i class="fas fa-bolt"></i></div>
-              <h3>Performance identique partout</h3>
-              <p>Chargement rapide sur tous les appareils</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="content-2">
-        <div class="section-content">
-          <div class="content-header">
-            <div class="content-icon"><i class="fas fa-search"></i></div>
-            <h2>Le référencement web</h2>
-          </div>
-          <div class="content-main">
-            <div class="content-text">
-              <div class="quote-box">
-                <blockquote>
-                  "Un site invisible sur Google, c'est comme une boutique
-                  fermée."
-                </blockquote>
-              </div>
-              <p>
-                Le référencement web (SEO) fait que votre site apparaît dans les
-                premiers résultats de Google quand quelqu'un cherche vos
-                services.
-              </p>
-              <p>
-                Et ce n'est pas tout : les IA comme ChatGPT utilisent aussi ces
-                informations pour recommander votre entreprise.
-              </p>
-            </div>
-            <div class="content-visual">
-              <div class="search-results">
-                <div class="search-result">
-                  <div class="result-number">1</div>
-                  <div class="result-content">
-                    <div class="result-title">Votre entreprise</div>
-                    <div class="result-url">votre-site.com</div>
-                    <div class="result-description">
-                      Description de vos services...
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="benefits-list">
-            <div class="benefit-item">
-              <span class="benefit-check">✓</span>
-              <span>Optimisation pour Google</span>
-            </div>
-            <div class="benefit-item">
-              <span class="benefit-check">✓</span>
-              <span>Visibilité sur les IA (ChatGPT)</span>
-            </div>
-            <div class="benefit-item">
-              <span class="benefit-check">✓</span>
-              <span>Trafic qualifié gratuit</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="content-3">
-        <div class="section-content">
-          <div class="content-header">
-            <div class="content-icon"><i class="fas fa-cogs"></i></div>
-            <h2>Développé avec Webflow</h2>
-          </div>
-          <div class="content-main">
-            <div class="content-text">
-              <p>
-                <strong
-                  >Webflow est une plateforme moderne qui crée des sites sur
-                  mesure, rapides et faciles à modifier.</strong
-                >
-              </p>
-              <p>
-                Vous pourrez modifier votre contenu vous-même, sans avoir besoin
-                de connaissances techniques.
-              </p>
-              <div class="action-examples">
-                <div class="action-item">
-                  <i class="fas fa-image"></i> Ajouter une photo
-                </div>
-                <div class="action-item">
-                  <i class="fas fa-edit"></i> Changer un texte
-                </div>
-                <div class="action-item">
-                  <i class="fas fa-file-alt"></i> Créer une nouvelle page
-                </div>
-              </div>
-              <p><em>Tout est possible en quelques clics.</em></p>
-            </div>
-            <div class="content-visual">
-              <div class="webflow-interface">
-                <div class="interface-header">Interface Webflow</div>
-                <div class="interface-content">
-                  <div class="interface-element">
-                    <i class="fas fa-home"></i> Page d'accueil
-                  </div>
-                  <div class="interface-element">
-                    <i class="fas fa-edit"></i> Éditeur de texte
-                  </div>
-                  <div class="interface-element">
-                    <i class="fas fa-images"></i> Gestionnaire d'images
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="features-grid">
-            <div class="feature-card">
-              <div class="feature-icon"><i class="fas fa-bullseye"></i></div>
-              <h3>Interface intuitive</h3>
-              <p>Modifiez votre contenu comme dans Word ou PowerPoint</p>
-            </div>
-            <div class="feature-card">
-              <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
-              <h3>Aucun risque de casser le site</h3>
-              <p>Modifications sécurisées et réversibles</p>
-            </div>
-            <div class="feature-card">
-              <div class="feature-icon"><i class="fas fa-globe"></i></div>
-              <h3>Accès depuis n'importe où</h3>
-              <p>
-                Connectez-vous depuis votre ordinateur, tablette ou téléphone
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="content-4">
-        <div class="section-content">
-          <div class="content-header">
-            <div class="content-icon"><i class="fas fa-lock"></i></div>
-            <h2>Un site conforme au RGPD</h2>
-          </div>
-          <div class="content-main">
-            <div class="content-text">
-              <div class="warning-box">
-                <p>
-                  <strong
-                    >Le RGPD protège les données de vos visiteurs. C'est
-                    obligatoire et ça évite les amendes.</strong
-                  >
-                </p>
-              </div>
-              <p>
-                Votre site sera conforme dès le départ : bandeau cookies,
-                mentions légales, protection des données.
-              </p>
-              <p>Vous n'aurez rien à gérer, tout est automatique.</p>
-            </div>
-            <div class="content-visual">
-              <div class="compliance-checklist">
-                <div class="checklist-item">
-                  <span class="checklist-icon"
-                    ><i class="fas fa-check"></i
-                  ></span>
-                  <span>Bandeau cookies</span>
-                </div>
-                <div class="checklist-item">
-                  <span class="checklist-icon"
-                    ><i class="fas fa-check"></i
-                  ></span>
-                  <span>Mentions légales</span>
-                </div>
-                <div class="checklist-item">
-                  <span class="checklist-icon"
-                    ><i class="fas fa-check"></i
-                  ></span>
-                  <span>Protection données</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="features-grid">
-            <div class="feature-card">
-              <div class="feature-icon"><i class="fas fa-cookie-bite"></i></div>
-              <h3>Bandeau cookies automatique</h3>
-              <p>Vos visiteurs donnent leur consentement en un clic</p>
-            </div>
-            <div class="feature-card">
-              <div class="feature-icon">
-                <i class="fas fa-clipboard-list"></i>
-              </div>
-              <h3>Mentions légales complètes</h3>
-              <p>Politique de confidentialité et mentions légales incluses</p>
-            </div>
-            <div class="feature-card">
-              <div class="feature-icon"><i class="fas fa-user-shield"></i></div>
-              <h3>Protection des données</h3>
-              <p>Formulaires sécurisés et données protégées</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="content-5">
-        <div class="section-content">
-          <div class="content-header">
-            <div class="content-icon">
-              <i class="fas fa-universal-access"></i>
-            </div>
-            <h2>Un site accessible à tous</h2>
-          </div>
-          <div class="content-main">
-            <div class="content-text">
-              <p>
-                <strong
-                  >Un site accessible, c'est un site utilisable par tout le
-                  monde : seniors, personnes malvoyantes, ou en situation de
-                  handicap.</strong
-                >
-              </p>
-              <p>
-                C'est une question de respect et d'inclusion – et parfois, c'est
-                obligatoire par la loi.
-              </p>
-              <p>
-                Votre site sera conçu pour être lisible et utilisable par la
-                majorité des utilisateurs.
-              </p>
-            </div>
-            <div class="content-visual">
-              <div class="accessibility-demo">
-                <div class="accessibility-item">
-                  <span class="accessibility-icon"
-                    ><i class="fas fa-eye"></i
-                  ></span>
-                  <span>Contrastes élevés</span>
-                </div>
-                <div class="accessibility-item">
-                  <span class="accessibility-icon"
-                    ><i class="fas fa-volume-up"></i
-                  ></span>
-                  <span>Lecteurs d'écran</span>
-                </div>
-                <div class="accessibility-item">
-                  <span class="accessibility-icon"
-                    ><i class="fas fa-keyboard"></i
-                  ></span>
-                  <span>Navigation clavier</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="features-grid">
-            <div class="feature-card">
-              <div class="feature-icon"><i class="fas fa-palette"></i></div>
-              <h3>Contrastes lisibles</h3>
-              <p>Textes et couleurs adaptés pour une lecture facile</p>
-            </div>
-            <div class="feature-card">
-              <div class="feature-icon"><i class="fas fa-compass"></i></div>
-              <h3>Navigation claire</h3>
-              <p>Structure simple et intuitive pour tous</p>
-            </div>
-            <div class="feature-card">
-              <div class="feature-icon"><i class="fas fa-volume-up"></i></div>
-              <h3>Compatible lecteurs d'écran</h3>
-              <p>Accessible aux personnes malvoyantes</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="content-6">
-        <div class="section-content">
-          <div class="content-header">
-            <div class="content-icon">
-              <i class="fas fa-globe-americas"></i>
-            </div>
-            <h2>Un site multilingue (optionnel)</h2>
-          </div>
-          <div class="content-main">
-            <div class="content-text">
-              <p>
-                <strong
-                  >Vous vendez à l'international ou vous avez des clients
-                  étrangers ?</strong
-                >
-              </p>
-              <p>
-                Votre site peut s'adapter automatiquement à la langue de vos
-                visiteurs (anglais, espagnol, allemand…).
-              </p>
-              <div class="optional-notice">
-                <p>
-                  Cette option est disponible si vous en avez besoin, sinon
-                  votre site reste parfait en français.
-                </p>
-              </div>
-            </div>
-            <div class="content-visual">
-              <div class="language-flags">
-                <div class="flag-item">
-                  <span class="flag">🇫🇷</span>
-                  <span>Français</span>
-                </div>
-                <div class="flag-item">
-                  <span class="flag">🇬🇧</span>
-                  <span>English</span>
-                </div>
-                <div class="flag-item">
-                  <span class="flag">🇪🇸</span>
-                  <span>Español</span>
-                </div>
-                <div class="flag-item">
-                  <span class="flag">🇩🇪</span>
-                  <span>Deutsch</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="features-grid">
-            <div class="feature-card">
-              <div class="feature-icon">
-                <i class="fas fa-globe"></i>
-              </div>
-              <h3>Détection automatique de la langue</h3>
-              <p>Le site s'adapte selon la langue du navigateur</p>
-            </div>
-            <div class="feature-card">
-              <div class="feature-icon"><i class="fas fa-language"></i></div>
-              <h3>Traductions faciles à gérer</h3>
-              <p>Interface simple pour modifier les traductions</p>
-            </div>
-            <div class="feature-card">
-              <div class="feature-icon"><i class="fas fa-search"></i></div>
-              <h3>SEO optimisé par langue</h3>
-              <p>Chaque version est optimisée pour Google</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="content-7">
-        <div class="section-content">
-          <div class="content-header">
-            <div class="content-icon"><i class="fas fa-magic"></i></div>
-            <h2>Un site animé (optionnel)</h2>
-          </div>
-          <div class="content-main">
-            <div class="content-text">
-              <p>
-                <strong
-                  >Des animations discrètes peuvent valoriser votre image de
-                  marque.</strong
-                >
-              </p>
-              <p>
-                Des effets subtils et modernes qui mettent en valeur votre
-                contenu sans distraire.
-              </p>
-              <div class="optional-notice">
-                <p>
-                  Cette option est disponible si vous souhaitez un site plus
-                  dynamique, sinon votre site reste élégant et professionnel.
-                </p>
-              </div>
-            </div>
-            <div class="content-visual">
-              <div class="animation-preview">
-                <div class="animation-element fade-in">Apparition douce</div>
-                <div class="animation-element slide-up">Glissement élégant</div>
-                <div class="animation-element scale">Mise en valeur</div>
-              </div>
-            </div>
-          </div>
-          <div class="features-grid">
-            <div class="feature-card">
-              <div class="feature-icon"><i class="fas fa-star"></i></div>
-              <h3>Apparitions douces des éléments</h3>
-              <p>Animations subtiles et élégantes au scroll</p>
-            </div>
-            <div class="feature-card">
-              <div class="feature-icon"><i class="fas fa-palette"></i></div>
-              <h3>Transitions harmonieuses</h3>
-              <p>Effets cohérents avec votre identité visuelle</p>
-            </div>
-            <div class="feature-card">
-              <div class="feature-icon"><i class="fas fa-bolt"></i></div>
-              <h3>Performance préservée</h3>
-              <p>Animations optimisées pour ne pas ralentir le site</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section Processus -->
-      <section id="process" class="process-section">
-        <div class="section-content">
-          <h2>Notre méthode en 4 étapes</h2>
-          <div class="process-steps">
-            <div class="step">
-              <div class="step-number">1</div>
-              <h3>Découverte</h3>
-              <p>Analyse de vos besoins, objectifs et concurrence</p>
-            </div>
-            <div class="step">
-              <div class="step-number">2</div>
-              <h3>Design</h3>
-              <p>Création de maquettes personnalisées et modernes</p>
-            </div>
-            <div class="step">
-              <div class="step-number">3</div>
-              <h3>Développement</h3>
-              <p>Intégration technique et optimisation performance</p>
-            </div>
-            <div class="step">
-              <div class="step-number">4</div>
-              <h3>Formation</h3>
-              <p>Accompagnement à l'utilisation et maintenance</p>
-            </div>
-          </div>
-          <div class="process-cta">
-            <a href="#contact" class="cta-button">Démarrer mon projet</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section Services -->
-      <section id="services" class="services-section">
-        <div class="section-content">
-          <h2>Nos services</h2>
-          <div class="intro-text">
-            <p>
-              <strong
-                >Notre métier : créer des sites clairs, performants, utiles et
-                simples à gérer.</strong
-              >
-            </p>
-            <p>
-              Que vous soyez indépendant, artisan, ou petite entreprise, on
-              s'adapte à votre besoin.
-            </p>
-          </div>
-          <div class="services-grid">
-            <div class="service-item">
-              <h3>Création de site vitrine</h3>
-              <p>
-                Site professionnel pour présenter votre activité avec stratégie
-                de référencement intégrée
-              </p>
-            </div>
-            <div class="service-item">
-              <h3>Portfolio artistique ou professionnel</h3>
-              <p>Mise en valeur de vos réalisations</p>
-            </div>
-            <div class="service-item">
-              <h3>Landing page marketing</h3>
-              <p>Page optimisée pour convertir vos visiteurs</p>
-            </div>
-            <div class="service-item">
-              <h3>Refonte d'un site existant</h3>
-              <p>Modernisation de votre site actuel</p>
-            </div>
-            <div class="service-item">
-              <h3>Accompagnement ou formation Webflow</h3>
-              <p>Formation pour gérer votre site vous-même</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section Tarifs -->
-      <section id="tarifs" class="pricing-section">
-        <div class="section-content">
-          <h2>Nos tarifs transparents</h2>
-          <div class="intro-text">
-            <p><strong>Des prix justes, sans surprise.</strong></p>
-            <p>
-              Chaque projet est unique, nous adaptons nos tarifs à vos besoins.
-            </p>
-          </div>
-
-          <!-- Formule Principale -->
-          <div class="pricing-main">
-            <div class="pricing-item featured">
-              <div class="pricing-badge">Formule Essentielle</div>
-              <div class="pricing-header">
-                <h3>Offre Clé en Main</h3>
-                <div class="price">750€ TTC</div>
-                <p>Délai : 5 jours ouvrés (après brief validé)</p>
-              </div>
-              <div class="pricing-features">
-                <span>✓ Jusqu'à 4 pages (Accueil, À propos, Contact)</span>
-                <span>✓ Design personnalisé basé sur des maquettes</span>
-                <span>✓ Site responsive (Mobile/Tablette/Ordinateur)</span>
-                <span>✓ Formulaire de contact basique</span>
-                <span
-                  >✓ 3 rendez-vous inclus (Cadrage + Validation Maquettes +
-                  Remise du site)</span
-                >
-                <span
-                  >✓ Retouches illimitées pendant 7 jours, dans le périmètre
-                  défini</span
-                >
-                <span>✓ Livraison rapide en 5 jours ouvrés</span>
-                <span>✓ SEO de base avec optimisation</span>
-                <span>✓ Pages et informations légales incluses</span>
-              </div>
-              <a href="#contact" class="pricing-cta">Choisir cette formule</a>
-            </div>
-          </div>
-
-          <!-- Add-ons -->
-          <div class="addons-section">
-            <h3>Add-ons — Options supplémentaires</h3>
-
-            <div class="addons-grid">
-              <div class="addons-category">
-                <h4>Fonctionnalités / Options</h4>
-                <div class="addons-list">
-                  <div class="addon-item">
-                    <span class="addon-name">Multilingue</span>
-                    <span class="addon-price">200€</span>
-                  </div>
-                  <div class="addon-item">
-                    <span class="addon-name">Ajout de pages (par page)</span>
-                    <span class="addon-price">75€</span>
-                  </div>
-                  <div class="addon-item">
-                    <span class="addon-name"
-                      >Conception d'une charte graphique simple</span
-                    >
-                    <span class="addon-price">120€</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="addons-category">
-                <h4>Visibilité & Marketing</h4>
-                <div class="addons-list">
-                  <div class="addon-item">
-                    <span class="addon-name"
-                      >Connexion outils d'analyse (Google Analytics + Search
-                      Console + Cookies)</span
-                    >
-                    <span class="addon-price">80€</span>
-                  </div>
-                  <div class="addon-item">
-                    <span class="addon-name"
-                      >Accompagnement création fiche Google My Business</span
-                    >
-                    <span class="addon-price">70€</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="addons-category">
-                <h4>Connexions externes</h4>
-                <div class="addons-list">
-                  <div class="addon-item">
-                    <span class="addon-name"
-                      >Connexion à CRM (Notion, etc.)</span
-                    >
-                    <span class="addon-price">60€</span>
-                  </div>
-                  <div class="addon-item">
-                    <span class="addon-name"
-                      >Configuration et intégration d'une newsletter (Mailchimp,
-                      MailerLite…)</span
-                    >
-                    <span class="addon-price">150€</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Modules avancés -->
-          <div class="modules-section">
-            <h3>Modules avancés</h3>
-
-            <div class="modules-grid">
-              <div class="module-item">
-                <div class="module-header">
-                  <h4>Module E-commerce</h4>
-                  <div class="module-price">650€</div>
-                </div>
-                <p class="module-subtitle">
-                  Créez votre boutique en ligne simplement
-                </p>
-                <div class="module-features">
-                  <span>✓ Jusqu'à 10 produits (catalogue extensible)</span>
-                  <span>✓ Panier, paiement (Stripe ou Shopify Lite)</span>
-                  <span>✓ Gestion CMS simple des produits</span>
-                  <span>✓ Email de confirmation</span>
-                  <span>✓ Page boutique + page produit</span>
-                </div>
-              </div>
-
-              <div class="module-item">
-                <div class="module-header">
-                  <h4>Module Prise de Rendez-vous</h4>
-                  <div class="module-price">150€</div>
-                </div>
-                <p class="module-subtitle">
-                  Permettez à vos clients de réserver facilement
-                </p>
-                <div class="module-features">
-                  <span>✓ Intégration Calendly, TidyCal, Planity, etc.</span>
-                  <span>✓ Page dédiée : "Prendre rendez-vous"</span>
-                  <span>✓ Personnalisation de l'interface</span>
-                  <span
-                    >✓ Notifications automatiques (selon outils choisis)</span
-                  >
-                </div>
-              </div>
-
-              <div class="module-item">
-                <div class="module-header">
-                  <h4>Module SEO Boost</h4>
-                  <div class="module-price">290€</div>
-                </div>
-                <p class="module-subtitle">
-                  Machine à contenu SEO prête à l'emploi
-                </p>
-                <div class="module-features">
-                  <span>✓ Analyse des mots-clés stratégiques</span>
-                  <span>✓ Arborescence optimisée pour le référencement</span>
-                  <span>✓ Plan éditorial et modèles de contenus</span>
-                  <span>✓ Mise en place d'une base « machine à contenu »</span>
-                </div>
-              </div>
-
-              <div class="module-item">
-                <div class="module-header">
-                  <h4>Module Dynamic</h4>
-                  <div class="module-price">220€</div>
-                </div>
-                <p class="module-subtitle">
-                  Ajoutez des contenus dynamiques à votre site
-                </p>
-                <div class="module-features">
-                  <span>✓ Blog avec système de catégories et tags</span>
-                  <span>✓ Gestion d'événements et calendrier</span>
-                  <span>✓ Galerie de témoignages clients</span>
-                  <span>✓ Portfolio avec filtres dynamiques</span>
-                  <span>✓ Actualités et articles de presse</span>
-                  <span>✓ Interface d'administration simplifiée</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Paiement -->
-          <div class="payment-section">
-            <h3>Paiement</h3>
-            <div class="payment-info">
-              <div class="payment-split">
-                <div class="payment-item">
-                  <span class="payment-percentage">50%</span>
-                  <span class="payment-label"
-                    >à la signature du devis (acompte)</span
-                  >
-                </div>
-                <div class="payment-item">
-                  <span class="payment-percentage">50%</span>
-                  <span class="payment-label">à la livraison</span>
-                </div>
-              </div>
-              <p class="payment-note">
-                Paiement sécurisé via Shine Facture ou virement bancaire
-              </p>
-            </div>
-          </div>
-
-          <!-- Coûts d'hébergement -->
-          <div class="hosting-section">
-            <h3>Coûts d'hébergement et nom de domaine</h3>
-            <div class="hosting-info">
-              <div class="hosting-notice">
-                <p>
-                  <strong>À savoir :</strong> le nom de domaine et l'hébergement
-                  du site sont à la charge du client dès la livraison finale.
-                </p>
-              </div>
-
-              <div class="hosting-costs">
-                <div class="cost-item">
-                  <h4>Nom de domaine</h4>
-                  <p class="cost-price">5 à 15 € / an en moyenne</p>
-                </div>
-
-                <div class="cost-item">
-                  <h4>Hébergement (selon le type de site)</h4>
-                  <div class="hosting-types">
-                    <div class="hosting-type">
-                      <span class="type-name">Site vitrine statique</span>
-                      <span class="type-price">~17 € / mois</span>
-                    </div>
-                    <div class="hosting-type">
-                      <span class="type-name">Site dynamique (CMS)</span>
-                      <span class="type-price">~27 € / mois</span>
-                    </div>
-                    <div class="hosting-type">
-                      <span class="type-name">Site e-commerce</span>
-                      <span class="type-price">à partir de 40 € / mois</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <p class="hosting-note">
-                <em
-                  >Tarifs indicatifs, susceptibles de varier selon les
-                  prestataires.</em
-                >
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section Contact -->
-      <section id="contact" class="contact-section">
-        <div class="section-content">
-          <h2>Démarrons votre projet</h2>
-          <div class="contact-container">
-            <div class="contact-info">
-              <h3>Pourquoi nous choisir ?</h3>
-              <div class="contact-benefits">
-                <div class="benefit">
-                  <span class="benefit-icon"><i class="fas fa-bolt"></i></span>
-                  <span>Devis gratuit en 24h</span>
-                </div>
-                <div class="benefit">
-                  <span class="benefit-icon"><i class="fas fa-check"></i></span>
-                  <span>Sites optimisés conversion</span>
-                </div>
-                <div class="benefit">
-                  <span class="benefit-icon"><i class="fas fa-check"></i></span>
-                  <span>Satisfaction garantie</span>
-                </div>
-                <div class="benefit">
-                  <span class="benefit-icon"><i class="fas fa-check"></i></span>
-                  <span>Accompagnement personnalisé</span>
-                </div>
-              </div>
-            </div>
-            <div class="contact-form">
-              <iframe
-                data-tally-src="https://tally.so/embed/wgo45D?alignLeft=1&hideTitle=1&dynamicHeight=1"
-                loading="lazy"
-                width="100%"
-                height="378"
-                frameborder="0"
-                marginheight="0"
-                marginwidth="0"
-                title="Démarrons votre projet"
-              ></iframe>
-              <script>
-                var d = document,
-                  w = "https://tally.so/widgets/embed.js",
-                  v = function () {
-                    "undefined" != typeof Tally
-                      ? Tally.loadEmbeds()
-                      : d
-                          .querySelectorAll("iframe[data-tally-src]:not([src])")
-                          .forEach(function (e) {
-                            e.src = e.dataset.tallySrc;
-                          });
-                  };
-                if ("undefined" != typeof Tally) v();
-                else if (d.querySelector('script[src="' + w + '"]') == null) {
-                  var s = d.createElement("script");
-                  (s.src = w),
-                    (s.onload = v),
-                    (s.onerror = v),
-                    d.body.appendChild(s);
-                }
-              </script>
-            </div>
-          </div>
-        </div>
-      </section>
+    <!-- Floating CTA -->
+    <div class="floating-cta">
+      <a href="https://www.satisa-formation.fr/" target="_blank">
+        <span class="material-symbols-outlined">school</span>
+        <span>Besoin d'une formation ?</span>
+      </a>
     </div>
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="footer-content">
-        <div class="footer-section">
-          <div class="footer-logo">
-            <img src="logo-white.svg" alt="SATISA" />
-            <p>Création de sites web professionnels</p>
-          </div>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="./logo-white.svg" alt="Satisa Studio" />
+          <p>Création de sites web professionnels</p>
         </div>
-        <div class="footer-section">
-          <h4>Nos services</h4>
+        <div>
+          <h4>Services</h4>
           <ul>
             <li><a href="#services">Sites vitrine</a></li>
-            <li><a href="#services">Landing pages</a></li>
-            <li><a href="#services">Refonte de sites</a></li>
-            <li><a href="#services">Formation Webflow</a></li>
+            <li><a href="#services">E-commerce</a></li>
+            <li><a href="#services">Sites formation</a></li>
           </ul>
         </div>
-        <div class="footer-section">
-          <h4>Informations</h4>
+        <div>
+          <h4>Ressources</h4>
           <ul>
-            <li><a href="#process">Notre méthode</a></li>
-            <li><a href="#guarantees">Nos garanties</a></li>
             <li><a href="#tarifs">Nos tarifs</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
-        <div class="footer-section">
-          <h4>Contact</h4>
-          <ul>
-            <li><a href="mailto:chris@satisa.fr">chris@satisa.fr</a></li>
-            <li><a href="tel:0783456753">0783456753</a></li>
-          </ul>
+        <div>
+          <h4>Satisa Studio</h4>
+          <div class="footer-contact-info">
+            <div class="footer-contact-item">9h - 17h</div>
+            <div class="footer-contact-item">
+              <a href="tel:0783456753">07.83.45.67.53</a>
+            </div>
+            <div class="footer-contact-item">
+              <a href="mailto:chris@satisa.fr">chris@satisa.fr</a>
+            </div>
+          </div>
+          <a
+            href="https://wa.me/33783456753"
+            target="_blank"
+            class="footer-cta"
+          >
+            <span class="material-symbols-outlined">chat</span>
+            <span>Discutons sur WhatsApp</span>
+          </a>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2024 SATISA Formation. Tous droits réservés.</p>
-        <a href="mentions-legales.html" class="footer-legal-link"
-          >Mentions légales</a
-        >
+        <div class="footer-legal">
+          <a href="./mentions-legales.html">Mentions légales</a>
+        </div>
       </div>
     </footer>
 
-    <!-- Bouton SATISA Formation -->
-    <div class="satisa-formation-btn">
-      <a
-        href="https://www.satisa-formation.fr"
-        target="_blank"
-        class="formation-button"
-      >
-        <span class="formation-icon">→</span>
-        <span class="formation-text">Satisa Formation</span>
-      </a>
-    </div>
+    <script>
+      // Tally embed script
+      var d = document,
+        w = "https://tally.so/widgets/embed.js",
+        v = function () {
+          "undefined" != typeof Tally
+            ? Tally.loadEmbeds()
+            : d
+                .querySelectorAll("iframe[data-tally-src]:not([src])")
+                .forEach(function (e) {
+                  e.src = e.dataset.tallySrc;
+                });
+        };
+      if ("undefined" != typeof Tally) v();
+      else if (d.querySelector('script[src="' + w + '"]') == null) {
+        var s = d.createElement("script");
+        (s.src = w), (s.onload = v), (s.onerror = v), d.body.appendChild(s);
+      }
 
-    <!-- GSAP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="script.js"></script>
+      // Mobile menu toggle
+      const burger = document.querySelector(".nav-burger");
+      const navLinks = document.querySelector(".nav-links");
+
+      if (burger) {
+        burger.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+          burger.classList.toggle("active");
+        });
+      }
+
+      // Close menu when clicking on a link
+      document.querySelectorAll(".nav-link, .nav-cta").forEach((link) => {
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("active");
+          burger.classList.remove("active");
+        });
+      });
+    </script>
   </body>
 </html>

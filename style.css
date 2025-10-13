@@ -678,7 +678,8 @@ section {
 .footer {
   background: #000f0f;
   color: white;
-  padding: 4rem 2rem 2rem;
+  padding: 4rem 2rem 6rem 2rem;
+  
 }
 
 .footer-container {

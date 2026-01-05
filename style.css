@@ -966,14 +966,16 @@ section {
   }
 
   .nav-logo {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.25rem;
+    gap: 0.5rem;
+  }
+
+  .nav-logo img {
+    height: 32px;
   }
 
   .nav-logo-by {
-    font-size: 0.75rem;
-    margin-left: 0;
+    font-size: 0.7rem;
+    white-space: nowrap;
   }
 
   .about-content {

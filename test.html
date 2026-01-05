@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide Complet : Certifications Professionnelles en France - Satisa Formation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8fafc;
+            padding: 20px;
+            line-height: 1.5;
+        }
+        
+        .page {
+            max-width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto 30px;
+            background: white;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            page-break-after: always;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 4px solid #3B82F6;
+        }
+        
+        .header h1 {
+            font-size: 28px;
+            color: #1E293B;
+            margin-bottom: 8px;
+        }
+        
+        .header .subtitle {
+            font-size: 15px;
+            color: #64748B;
+            margin-bottom: 5px;
+        }
+        
+        .header .page-number {
+            font-size: 12px;
+            color: #94A3B8;
+            margin-top: 8px;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 15px;
+            padding: 10px 15px;
+            background: linear-gradient(135deg, #3B82F6 0%, #1E40AF 100%);
+            border-radius: 8px;
+        }
+        
+        .intro-text {
+            background: #F1F5F9;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #3B82F6;
+            margin-bottom: 20px;
+            font-size: 13px;
+            color: #475569;
+        }
+        
+        .levels {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+        
+        .level-card {
+            background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%);
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            border: 2px solid #3B82F6;
+            transition: transform 0.2s;
+        }
+        
+        .level-card:hover {
+            transform: translateY(-3px);
+        }
+        
+        .level-card .number {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1E40AF;
+            margin-bottom: 5px;
+        }
+        
+        .level-card .name {
+            font-size: 13px;
+            color: #1E40AF;
+            font-weight: 600;
+            margin: 5px 0;
+        }
+        
+        .level-card .example {
+            font-size: 11px;
+            color: #64748B;
+        }
+        
+        .certifiers {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .certifier-card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            border: 3px solid;
+            min-height: 180px;
+        }
+        
+        .certifier-card.blue {
+            border-color: #3B82F6;
+            background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%);
+        }
+        
+        .certifier-card.green {
+            border-color: #10B981;
+            background: linear-gradient(135deg, #ECFDF5 0%, #D1FAE5 100%);
+        }
+        
+        .certifier-card.purple {
+            border-color: #8B5CF6;
+            background: linear-gradient(135deg, #F5F3FF 0%, #EDE9FE 100%);
+        }
+        
+        .certifier-card h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        
+        .certifier-card.blue h3 { color: #1E40AF; }
+        .certifier-card.green h3 { color: #059669; }
+        .certifier-card.purple h3 { color: #6D28D9; }
+        
+        .certifier-card p {
+            font-size: 11px;
+            color: #475569;
+            margin-bottom: 5px;
+            line-height: 1.4;
+        }
+        
+        .certifier-card .highlight {
+            background: white;
+            padding: 6px 8px;
+            border-radius: 5px;
+            font-size: 10px;
+            font-weight: bold;
+            margin-top: 10px;
+            display: inline-block;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .blue .highlight { color: #1E40AF; }
+        .green .highlight { color: #059669; }
+        .purple .highlight { color: #6D28D9; }
+        
+        .certification-detail {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            border: 3px solid;
+            margin-bottom: 20px;
+        }
+        
+        .certification-detail.blue { 
+            border-color: #3B82F6;
+            background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%);
+        }
+        .certification-detail.green { 
+            border-color: #10B981;
+            background: linear-gradient(135deg, #ECFDF5 0%, #D1FAE5 100%);
+        }
+        .certification-detail.purple { 
+            border-color: #8B5CF6;
+            background: linear-gradient(135deg, #F5F3FF 0%, #EDE9FE 100%);
+        }
+        .certification-detail.orange { 
+            border-color: #F59E0B;
+            background: linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 100%);
+        }
+        
+        .certification-detail h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid rgba(0,0,0,0.1);
+        }
+        
+        .certification-detail.blue h3 { color: #1E40AF; }
+        .certification-detail.green h3 { color: #059669; }
+        .certification-detail.purple h3 { color: #6D28D9; }
+        .certification-detail.orange h3 { color: #D97706; }
+        
+        .certification-detail .subtitle {
+            font-size: 12px;
+            color: #64748B;
+            margin-bottom: 12px;
+            font-style: italic;
+        }
+        
+        .certification-detail .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+        
+        .certification-detail .info-item {
+            font-size: 11px;
+        }
+        
+        .certification-detail .info-item strong {
+            color: #1E293B;
+            display: block;
+            margin-bottom: 3px;
+        }
+        
+        .certification-detail .characteristics {
+            background: white;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 11px;
+            margin-top: 10px;
+        }
+        
+        .certification-detail .characteristics ul {
+            margin-left: 15px;
+            color: #475569;
+        }
+        
+        .certification-detail .characteristics li {
+            margin: 4px 0;
+        }
+        
+        .certification-detail .examples {
+            background: rgba(255,255,255,0.5);
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 11px;
+            margin-top: 10px;
+        }
+        
+        .certification-detail .examples strong {
+            color: #1E293B;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 11px;
+            margin-bottom: 20px;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .comparison-table th {
+            background: linear-gradient(135deg, #1E40AF 0%, #3B82F6 100%);
+            color: white;
+            padding: 12px 8px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        .comparison-table td {
+            padding: 10px 8px;
+            border-bottom: 1px solid #E2E8F0;
+            color: #475569;
+        }
+        
+        .comparison-table tr:hover {
+            background: #F8FAFC;
+        }
+        
+        .comparison-table .highlight-yes {
+            color: #059669;
+            font-weight: 600;
+        }
+        
+        .comparison-table .highlight-no {
+            color: #DC2626;
+            font-weight: 600;
+        }
+        
+        .repositories {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .repo-card {
+            padding: 15px;
+            border-radius: 8px;
+            border: 3px solid;
+        }
+        
+        .repo-card.rncp {
+            border-color: #F59E0B;
+            background: linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 100%);
+        }
+        
+        .repo-card.rs {
+            border-color: #EF4444;
+            background: linear-gradient(135deg, #FEF2F2 0%, #FEE2E2 100%);
+        }
+        
+        .repo-card h3 {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+        
+        .repo-card.rncp h3 { color: #D97706; }
+        .repo-card.rs h3 { color: #DC2626; }
+        
+        .repo-card .subtitle {
+            font-size: 12px;
+            color: #64748B;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .repo-card p {
+            font-size: 11px;
+            color: #475569;
+            margin-bottom: 5px;
+        }
+        
+        .repo-card ul {
+            margin-left: 15px;
+            font-size: 11px;
+            color: #64748B;
+        }
+        
+        .repo-card ul li {
+            margin: 4px 0;
+        }
+        
+        .repo-card .link {
+            background: white;
+            padding: 6px 10px;
+            border-radius: 5px;
+            font-size: 10px;
+            margin-top: 10px;
+            display: inline-block;
+            font-weight: 600;
+        }
+        
+        .repo-card.rncp .link { color: #D97706; }
+        .repo-card.rs .link { color: #DC2626; }
+        
+        .checklist {
+            background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%);
+            padding: 15px;
+            border-radius: 8px;
+            border: 3px solid #F59E0B;
+        }
+        
+        .checklist h3 {
+            font-size: 16px;
+            color: #92400E;
+            margin-bottom: 12px;
+        }
+        
+        .checklist ul {
+            list-style: none;
+            font-size: 12px;
+            color: #78350F;
+        }
+        
+        .checklist li {
+            padding: 5px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .checklist li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #F59E0B;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        .warning-box {
+            background: #FEF2F2;
+            border: 2px solid #EF4444;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .warning-box h4 {
+            color: #DC2626;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        
+        .warning-box p {
+            font-size: 11px;
+            color: #7F1D1D;
+            line-height: 1.5;
+        }
+        
+        .info-box {
+            background: #DBEAFE;
+            border: 2px solid #3B82F6;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .info-box h4 {
+            color: #1E40AF;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        
+        .info-box p {
+            font-size: 11px;
+            color: #1E3A8A;
+            line-height: 1.5;
+        }
+        
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            padding-top: 15px;
+            border-top: 3px solid #E2E8F0;
+        }
+        
+        .footer .logo {
+            font-size: 18px;
+            font-weight: bold;
+            color: #3B82F6;
+            margin-bottom: 5px;
+        }
+        
+        .footer p {
+            font-size: 11px;
+            color: #64748B;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .page {
+                box-shadow: none;
+                margin: 0;
+                page-break-after: always;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- PAGE 1 : Introduction et Niveaux -->
+    <div class="page">
+        <div class="header">
+            <h1>📊 LES CERTIFICATIONS PROFESSIONNELLES EN FRANCE</h1>
+            <div class="subtitle">Guide Complet Satisa Formation</div>
+            <div class="page-number">Page 1/5</div>
+        </div>
+        
+        <div class="intro-text">
+            <strong>📌 Objectif de ce guide :</strong><br>
+            Comprendre les différents types de certifications professionnelles en France pour mieux conseiller nos clients et concevoir des formations conformes Qualiopi.
+        </div>
+        
+        <div class="section">
+            <div class="section-title">🎓 Les 6 niveaux de qualification</div>
+            <p style="font-size: 12px; color: #64748B; margin-bottom: 15px;">
+                En France, les certifications sont classées selon le <strong>Cadre National des Certifications Professionnelles (CNCP)</strong> en 8 niveaux (3 à 8) :
+            </p>
+            
+            <div class="levels">
+                <div class="level-card">
+                    <div class="number">NIVEAU 3</div>
+                    <div class="name">CAP, BEP</div>
+                    <div class="example">Ex: CAP Cuisine, CAP Électricien</div>
+                </div>
+                <div class="level-card">
+                    <div class="number">NIVEAU 4</div>
+                    <div class="name">Bac, Bac Pro, BP</div>
+                    <div class="example">Ex: Bac Pro Commerce, BP Coiffure</div>
+                </div>
+                <div class="level-card">
+                    <div class="number">NIVEAU 5</div>
+                    <div class="name">BTS, DUT, TP</div>
+                    <div class="example">Ex: BTS NDRC, TP Développeur Web</div>
+                </div>
+                <div class="level-card">
+                    <div class="number">NIVEAU 6</div>
+                    <div class="name">Licence, Bachelor</div>
+                    <div class="example">Ex: Licence Pro, Bachelor Marketing</div>
+                </div>
+                <div class="level-card">
+                    <div class="number">NIVEAU 7</div>
+                    <div class="name">Master, Ingénieur</div>
+                    <div class="example">Ex: Master RH, Diplôme Ingénieur</div>
+                </div>
+                <div class="level-card">
+                    <div class="number">NIVEAU 8</div>
+                    <div class="name">Doctorat</div>
+                    <div class="example">Ex: Doctorat en Sciences</div>
+                </div>
+            </div>
+            
+            <p style="font-size: 11px; color: #64748B; font-style: italic; margin-top: 10px;">
+                💡 Note : Ancienne nomenclature - Niveau 3 = ancien Niveau V / Niveau 5 = ancien Niveau III
+            </p>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">🏢 Les 3 types de certificateurs</div>
+            <div class="certifiers">
+                <div class="certifier-card blue">
+                    <h3>🏛️ MINISTÈRES</h3>
+                    <p><strong>Qui :</strong></p>
+                    <p>• Ministère du Travail<br>• Ministère de l'Éducation Nationale<br>• Ministère de l'Enseignement Supérieur</p>
+                    <p style="margin-top: 8px;"><strong>Délivrent :</strong></p>
+                    <p>• Titres Professionnels (TP)<br>• Diplômes d'État (BTS, CAP, Licence...)</p>
+                    <div class="highlight">✨ Multidiffusion : Plusieurs organismes peuvent préparer au MÊME titre</div>
+                </div>
+                
+                <div class="certifier-card green">
+                    <h3>🏫 ORGANISMES PRIVÉS</h3>
+                    <p><strong>Qui :</strong></p>
+                    <p>• Écoles privées (ICADEMIE, Studi...)<br>• CCI<br>• Grandes Écoles (ESSEC, HEC...)</p>
+                    <p style="margin-top: 8px;"><strong>Délivrent :</strong></p>
+                    <p>• Leurs propres certifications inscrites au RNCP</p>
+                    <div class="highlight">⚠️ Monopole : SEUL le certificateur peut délivrer sa certification</div>
+                </div>
+                
+                <div class="certifier-card purple">
+                    <h3>🤝 BRANCHES PROFESSIONNELLES</h3>
+                    <p><strong>Qui :</strong></p>
+                    <p>• Branche BTP<br>• Branche Restauration<br>• Branche Bancaire</p>
+                    <p style="margin-top: 8px;"><strong>Délivrent :</strong></p>
+                    <p>• CQP (Certificats de Qualification Professionnelle)</p>
+                    <div class="highlight">🎯 Reconnus dans le secteur uniquement</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="logo">SATISA FORMATION</div>
+            <p>Expert en conception pédagogique conforme Qualiopi</p>
+            <p>🌐 www.satisa-formation.fr | 💼 LinkedIn : Satisa Formation</p>
+        </div>
+    </div>
+    
+    <!-- PAGE 2 : Titres Professionnels et Diplômes d'État -->
+    <div class="page">
+        <div class="header">
+            <h1>📊 LES CERTIFICATIONS PROFESSIONNELLES EN FRANCE</h1>
+            <div class="subtitle">Les Titres Professionnels (TP) et Diplômes d'État</div>
+            <div class="page-number">Page 2/5</div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">🔵 Les Titres Professionnels (TP)</div>
+            
+            <div class="certification-detail blue">
+                <h3>📋 QU'EST-CE QU'UN TITRE PROFESSIONNEL ?</h3>
+                <div class="subtitle">Certification délivrée par le Ministère du Travail, du Plein Emploi et de l'Insertion</div>
+                
+                <div class="info-grid">
+                    <div class="info-item">
+                        <strong>🎯 Public cible</strong>
+                        Adultes en reconversion, demandeurs d'emploi, salariés en formation continue
+                    </div>
+                    <div class="info-item">
+                        <strong>📊 Niveaux</strong>
+                        Du niveau 3 (CAP) au niveau 6 (Bac+3/4)
+                    </div>
+                    <div class="info-item">
+                        <strong>⏱️ Durée moyenne</strong>
+                        6 mois à 2 ans (plus court qu'un diplôme d'État)
+                    </div>
+                    <div class="info-item">
+                        <strong>✅ Reconnaissance</strong>
+                        Reconnu par l'État, inscrit au RNCP
+                    </div>
+                </div>
+                
+                <div class="characteristics">
+                    <strong>✨ Caractéristiques principales :</strong>
+                    <ul>
+                        <li><strong>Très professionnalisant</strong> - Axé sur la pratique métier</li>
+                        <li><strong>Multidiffusion</strong> - Plusieurs organismes peuvent préparer au MÊME TP</li>
+                        <li><strong>Référentiel public</strong> - Accessible gratuitement sur le site du Ministère</li>
+                        <li><strong>Structure en blocs</strong> - Composé de CCP (Certificats de Compétences Professionnelles)</li>
+                        <li><strong>Validation progressive</strong> - Possibilité de valider les CCP un par un</li>
+                    </ul>
+                </div>
+                
+                <div class="examples">
+                    <strong>📚 Exemples de Titres Professionnels :</strong>
+                    • TP Développeur Web et Web Mobile (Niveau 5)<br>
+                    • TP Gestionnaire de Paie (Niveau 5)<br>
+                    • TP Négociateur Technico-Commercial (Niveau 5)<br>
+                    • TP Concepteur Développeur d'Applications (Niveau 6)
+                </div>
+            </div>
+            
+            <div class="info-box">
+                <h4>💡 POUR SATISA : AVANTAGE MAJEUR</h4>
+                <p>
+                    Tu peux concevoir des formations pour préparer à <strong>n'importe quel TP</strong> sans autorisation spéciale. Le référentiel est public et gratuit. Ton rôle : aligner tes contenus avec le référentiel officiel du TP.
+                </p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">🔵 Les Diplômes d'État (Éducation Nationale)</div>
+            
+            <div class="certification-detail orange">
+                <h3>📋 QU'EST-CE QU'UN DIPLÔME D'ÉTAT ?</h3>
+                <div class="subtitle">Certifications délivrées par le Ministère de l'Éducation Nationale ou de l'Enseignement Supérieur</div>
+                
+                <div class="characteristics">
+                    <strong>✨ Caractéristiques principales :</strong>
+                    <ul>
+                        <li><strong>Reconnus automatiquement par l'État</strong> - Valeur nationale</li>
+                        <li><strong>Programme défini par le ministère</strong> - Cadre national</li>
+                        <li><strong>Examen national</strong> - Mêmes épreuves pour tous</li>
+                        <li><strong>Plutôt académique</strong> - Équilibre théorie/pratique</li>
+                        <li><strong>Public jeune principalement</strong> - Formation initiale</li>
+                    </ul>
+                </div>
+                
+                <div class="examples">
+                    <strong>📚 Exemples de Diplômes d'État :</strong>
+                    • CAP (Certificat d'Aptitude Professionnelle) - Niveau 3<br>
+                    • Bac Professionnel - Niveau 4<br>
+                    • BTS (Brevet de Technicien Supérieur) - Niveau 5<br>
+                    • BUT (Bachelor Universitaire de Technologie) - Niveau 6<br>
+                    • Licence - Niveau 6<br>
+                    • Master - Niveau 7
+                </div>
+            </div>
+            
+            <div class="warning-box">
+                <h4>⚠️ POUR SATISA : ATTENTION</h4>
+                <p>
+                    Généralement, seuls les établissements autorisés (lycées, universités, CFA agréés) peuvent préparer aux diplômes d'État. Vérifie toujours les habilitations de ton client.
+                </p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="logo">SATISA FORMATION</div>
+            <p>Expert en conception pédagogique conforme Qualiopi</p>
+            <p>🌐 www.satisa-formation.fr | 💼 LinkedIn : Satisa Formation</p>
+        </div>
+    </div>
+    
+    <!-- PAGE 3 : Certifications Privées, Bachelors et CQP -->
+    <div class="page">
+        <div class="header">
+            <h1>📊 LES CERTIFICATIONS PROFESSIONNELLES EN FRANCE</h1>
+            <div class="subtitle">Certifications Privées, Bachelors et CQP</div>
+            <div class="page-number">Page 3/5</div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">🟢 Les Certifications Privées RNCP</div>
+            
+            <div class="certification-detail green">
+                <h3>📋 QU'EST-CE QU'UNE CERTIFICATION PRIVÉE RNCP ?</h3>
+                <div class="subtitle">Certification créée par un organisme privé et inscrite au RNCP par France Compétences</div>
+                
+                <div class="info-grid">
+                    <div class="info-item">
+                        <strong>🏫 Certificateur</strong>
+                        École privée, CCI, Grande École, organisme de formation
+                    </div>
+                    <div class="info-item">
+                        <strong>✅ Reconnaissance</strong>
+                        Reconnue par l'État (inscrite au RNCP)
+                    </div>
+                    <div class="info-item">
+                        <strong>⚠️ Particularité</strong>
+                        SEUL le certificateur peut délivrer sa certification
+                    </div>
+                    <div class="info-item">
+                        <strong>📊 Niveaux</strong>
+                        Variable (généralement 5 à 7)
+                    </div>
+                </div>
+                
+                <div class="characteristics">
+                    <strong>✨ Caractéristiques principales :</strong>
+                    <ul>
+                        <li><strong>Monopole</strong> - Seul l'organisme créateur peut la délivrer (ou ses partenaires agréés)</li>
+                        <li><strong>Professionnalisante</strong> - Orientée métier et compétences</li>
+                        <li><strong>Référentiel parfois payant</strong> - Pas toujours accessible publiquement</li>
+                        <li><strong>Reconnaissance variable</strong> - Dépend de la notoriété de l'organisme</li>
+                    </ul>
+                </div>
+                
+                <div class="examples">
+                    <strong>📚 Exemples de Certifications Privées RNCP :</strong>
+                    • Chef de Projet Digital (ICADEMIE) - RNCP36400 - Niveau 6<br>
+                    • Concepteur Designer UI (Studi) - RNCP35634 - Niveau 6<br>
+                    • Développeur Web et Mobile (26 Academy) - RNCP37873 - Niveau 5<br>
+                    • Manager de Projet Numérique (CCI Paris) - RNCP38369 - Niveau 7
+                </div>
+            </div>
+            
+            <div class="warning-box">
+                <h4>⚠️ POUR SATISA : VÉRIFIER SYSTÉMATIQUEMENT</h4>
+                <p>
+                    Avant de concevoir une formation pour une certification privée RNCP, vérifie que ton client :<br>
+                    • Est le certificateur lui-même<br>
+                    • OU est partenaire agréé du certificateur<br>
+                    • A accès au référentiel de certification<br>
+                    <strong>Sans cela, il ne peut PAS délivrer la certification.</strong>
+                </p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">🟡 Les Bachelors</div>
+            
+            <div class="certification-detail orange">
+                <h3>📋 QU'EST-CE QU'UN BACHELOR ?</h3>
+                <div class="subtitle">Diplôme de niveau 6 (Bac+3 ou Bac+4)</div>
+                
+                <div class="characteristics">
+                    <strong>🔍 2 types de Bachelors :</strong>
+                    <ul>
+                        <li><strong>Bachelor Universitaire (BUT)</strong> - Délivré par les IUT, diplôme d'État, 3 ans, reconnu automatiquement</li>
+                        <li><strong>Bachelor Privé</strong> - Délivré par écoles privées, 3 ou 4 ans, peut être inscrit au RNCP ou non</li>
+                    </ul>
+                </div>
+                
+                <div class="examples">
+                    <strong>📚 Exemples de Bachelors :</strong>
+                    • Bachelor Marketing Digital (école privée)<br>
+                    • Bachelor Ressources Humaines (CCI)<br>
+                    • BUT Informatique (IUT) - Diplôme d'État<br>
+                    • Bachelor Développement Web (école spécialisée)
+                </div>
+            </div>
+            
+            <div class="warning-box">
+                <h4>⚠️ POUR SATISA : ATTENTION AUX BACHELORS PRIVÉS</h4>
+                <p>
+                    Tous les Bachelors privés ne sont PAS reconnus par l'État. Toujours vérifier si le Bachelor est inscrit au RNCP avant de le mentionner comme "reconnu par l'État".
+                </p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">🟣 Les CQP (Certificats de Qualification Professionnelle)</div>
+            
+            <div class="certification-detail purple">
+                <h3>📋 QU'EST-CE QU'UN CQP ?</h3>
+                <div class="subtitle">Certification créée par les branches professionnelles (pas l'État)</div>
+                
+                <div class="characteristics">
+                    <strong>✨ Caractéristiques principales :</strong>
+                    <ul>
+                        <li><strong>Reconnus par la branche</strong> - Pas forcément au niveau national</li>
+                        <li><strong>Très ciblés</strong> - Sur un métier précis d'un secteur</li>
+                        <li><strong>Formations courtes</strong> - Quelques mois</li>
+                        <li><strong>Organismes agréés</strong> - Seuls les OF agréés par la branche peuvent préparer</li>
+                    </ul>
+                </div>
+                
+                <div class="examples">
+                    <strong>📚 Exemples de CQP :</strong>
+                    • CQP Agent de Prévention et de Sécurité<br>
+                    • CQP Serveur en Restauration<br>
+                    • CQP Vendeur Conseil en Magasin<br>
+                    • CQP Opérateur de Production Industrielle
+                </div>
+            </div>
+            
+            <div class="warning-box">
+                <h4>⚠️ POUR SATISA : VÉRIFIER L'AGRÉMENT</h4>
+                <p>
+                    Ton client doit être agréé par la branche professionnelle pour préparer à un CQP. Sans agrément, impossible de délivrer le CQP.
+                </p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="logo">SATISA FORMATION</div>
+            <p>Expert en conception pédagogique conforme Qualiopi</p>
+            <p>🌐 www.satisa-formation.fr | 💼 LinkedIn : Satisa Formation</p>
+        </div>
+    </div>
+    
+    <!-- PAGE 4 : Répertoires RNCP et RS + Tableau Comparatif -->
+    <div class="page">
+        <div class="header">
+            <h1>📊 LES CERTIFICATIONS PROFESSIONNELLES EN FRANCE</h1>
+            <div class="subtitle">Les Répertoires Officiels et Comparatif</div>
+            <div class="page-number">Page 4/5</div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">📚 Les 2 Répertoires Officiels</div>
+            
+            <div class="repositories">
+                <div class="repo-card rncp">
+                    <h3>📘 RNCP</h3>
+                    <div class="subtitle">Répertoire National des Certifications Professionnelles</div>
+                    
+                    <p><strong>Ce qu'on y trouve :</strong></p>
+                    <ul>
+                        <li>Diplômes d'État (BTS, Licence, Master...)</li>
+                        <li>Titres Professionnels (TP)</li>
+                        <li>Certifications privées reconnues</li>
+                        <li>Bachelors reconnus</li>
+                        <li>CQP reconnus au niveau national</li>
+                    </ul>
+                    
+                    <p style="margin-top: 10px; font-weight: 600;">→ Certifications COMPLÈTES</p>
+                    <p style="font-weight: 600;">→ Classées par niveau (3 à 8)</p>
+                    <p style="font-weight: 600;">→ Éligibles aux financements publics (CPF, OPCO)</p>
+                    
+                    <div class="link">🔗 www.francecompetences.fr/rncp</div>
+                </div>
+                
+                <div class="repo-card rs">
+                    <h3>📙 RS</h3>
+                    <div class="subtitle">Répertoire Spécifique</div>
+                    
+                    <p><strong>Ce qu'on y trouve :</strong></p>
+                    <ul>
+                        <li>Certifications complémentaires</li>
+                        <li>Habilitations (CACES, électrique, etc.)</li>
+                        <li>Certifications linguistiques (TOEIC, Voltaire...)</li>
+                        <li>Certifications courtes (Google Ads, Excel...)</li>
+                        <li>Certifications transversales</li>
+                    </ul>
+                    
+                    <p style="margin-top: 10px; font-weight: 600;">→ Certifications PARTIELLES</p>
+                    <p style="font-weight: 600;">→ Pas de niveau attribué</p>
+                    <p style="font-weight: 600;">→ Complètent une certification RNCP</p>
+                    
+                    <div class="link">🔗 www.francecompetences.fr/rs</div>
+                </div>
+            </div>
+            
+            <div class="info-box">
+                <h4>💡 DIFFÉRENCE RNCP vs RS</h4>
+                <p>
+                    <strong>RNCP</strong> = Diplômes/titres complets avec niveau (BTS, TP, Bachelor...) → Métier complet<br>
+                    <strong>RS</strong> = Certifications complémentaires sans niveau (TOEIC, CACES...) → Compétence spécifique
+                </p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">📊 Tableau Comparatif</div>
+            
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Certificateur</th>
+                        <th>Niveau</th>
+                        <th>Durée</th>
+                        <th>Reconnu État</th>
+                        <th>Qui peut préparer ?</th>
+                        <th>Public</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>TP</strong></td>
+                        <td>Min. Travail</td>
+                        <td>3 à 6</td>
+                        <td>6 mois - 2 ans</td>
+                        <td class="highlight-yes">✅ Oui (RNCP)</td>
+                        <td class="highlight-yes">✅ Tous les OF</td>
+                        <td>Adultes, reconversion</td>
+                    </tr>
+                    <tr>
+                        <td><strong>BTS</strong></td>
+                        <td>Min. Éduc. Nat.</td>
+                        <td>5 (Bac+2)</td>
+                        <td>2 ans</td>
+                        <td class="highlight-yes">✅ Oui</td>
+                        <td>Lycées, CFA autorisés</td>
+                        <td>Post-bac</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Certif. privée RNCP</strong></td>
+                        <td>Organisme privé</td>
+                        <td>Variable</td>
+                        <td>Variable</td>
+                        <td class="highlight-yes">✅ Oui (RNCP)</td>
+                        <td class="highlight-no">⚠️ Certificateur seul</td>
+                        <td>Variable</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Bachelor privé</strong></td>
+                        <td>École privée, CCI</td>
+                        <td>6 (Bac+3/4)</td>
+                        <td>3-4 ans</td>
+                        <td class="highlight-no">⚠️ Selon école</td>
+                        <td class="highlight-no">⚠️ Certificateur uniquement</td>
+                        <td>Post-bac</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Bachelor universitaire (BUT)</strong></td>
+                        <td>Universités (IUT)</td>
+                        <td>6 (Bac+3)</td>
+                        <td>3 ans</td>
+                        <td class="highlight-yes">✅ Oui</td>
+                        <td>IUT uniquement</td>
+                        <td>Post-bac</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Licence</strong></td>
+                        <td>Universités</td>
+                        <td>6 (Bac+3)</td>
+                        <td>3 ans</td>
+                        <td class="highlight-yes">✅ Oui</td>
+                        <td>Universités</td>
+                        <td>Post-bac</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Master</strong></td>
+                        <td>Universités, Grandes Écoles</td>
+                        <td>7 (Bac+5)</td>
+                        <td>2 ans</td>
+                        <td class="highlight-yes">✅ Oui</td>
+                        <td>Universités, Grandes Écoles</td>
+                        <td>Post-Licence</td>
+                    </tr>
+                    <tr>
+                        <td><strong>CQP</strong></td>
+                        <td>Branche pro</td>
+                        <td>Variable</td>
+                        <td>Quelques mois</td>
+                        <td class="highlight-no">⚠️ Branche uniquement</td>
+                        <td>OF agréés branche</td>
+                        <td>Salariés du secteur</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="footer">
+            <div class="logo">SATISA FORMATION</div>
+            <p>Expert en conception pédagogique conforme Qualiopi</p>
+            <p>🌐 www.satisa-formation.fr | 💼 LinkedIn : Satisa Formation</p>
+        </div>
+    </div>
+    
+    <!-- PAGE 5 : Checklist Satisa et Points d'Attention -->
+    <div class="page">
+        <div class="header">
+            <h1>📊 LES CERTIFICATIONS PROFESSIONNELLES EN FRANCE</h1>
+            <div class="subtitle">Checklist Satisa et Points d'Attention</div>
+            <div class="page-number">Page 5/5</div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">✅ CHECKLIST SATISA : Formation Certifiante</div>
+            
+            <div class="checklist">
+                <h3>📋 Avant de valider un projet de formation certifiante :</h3>
+                <ul>
+                    <li>Demander le nom exact de la certification</li>
+                    <li>Vérifier sur France Compétences (RNCP ou RS)</li>
+                    <li>Identifier le certificateur (Ministère, organisme privé, branche pro)</li>
+                    <li>Si TP (Ministère du Travail) → ✅ OK, référentiel accessible, multidiffusion</li>
+                    <li>Si certification privée → Demander : "Êtes-vous le certificateur ou son partenaire agréé ?"</li>
+                    <li>Si CQP → Demander : "Êtes-vous agréé par la branche professionnelle ?"</li>
+                    <li>Récupérer le référentiel de certification (public ou via le client)</li>
+                    <li>Aligner la conception avec le référentiel (Indicateur 9 Qualiopi)</li>
+                    <li>Prévoir les obligations Qualiopi supplémentaires (Indicateurs 3 et 9)</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">🚨 Points d'Attention pour Satisa</div>
+            
+            <div class="warning-box">
+                <h4>⚠️ NE JAMAIS promettre une certification si le client n'est pas certificateur</h4>
+                <p>
+                    <strong>Exemple à éviter :</strong><br>
+                    ❌ "On va vous créer une formation pour le titre Chef de Projet Digital (ICADEMIE)"<br>
+                    → Si le client n'est pas ICADEMIE ou son partenaire, c'est IMPOSSIBLE<br><br>
+                    <strong>Bon réflexe :</strong><br>
+                    ✅ "On va vous créer une formation en gestion de projet digital. Êtes-vous partenaire d'un certificateur pour délivrer un titre ?"
+                </p>
+            </div>
+            
+            <div class="warning-box">
+                <h4>⚠️ TOUJOURS vérifier sur France Compétences</h4>
+                <p>
+                    Avant de valider un projet de formation certifiante :<br>
+                    1. Cherche la certification sur www.francecompetences.fr/rncp<br>
+                    2. Vérifie qui est le certificateur<br>
+                    3. Demande au client s'il est le certificateur ou partenaire agréé
+                </p>
+            </div>
+            
+            <div class="warning-box">
+                <h4>⚠️ DIFFÉRENCIER "reconnu par l'État" et "reconnu sur le marché"</h4>
+                <p>
+                    <strong>Reconnu par l'État :</strong><br>
+                    ✅ Inscrit au RNCP ou RS<br>
+                    ✅ Éligible aux financements publics (CPF, OPCO)<br>
+                    ✅ Valeur officielle<br><br>
+                    <strong>Reconnu sur le marché :</strong><br>
+                    Une certification peut être très reconnue par les professionnels d'un secteur (ex: certifications Google, Microsoft) SANS être inscrite au RNCP. Elle n'est pas "reconnue par l'État" mais peut avoir de la valeur pour les employeurs.
+                </p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">💼 Ce que ça change pour Satisa selon le type</div>
+            
+            <div class="info-box">
+                <h4>✅ SI TU CONÇOIS UNE FORMATION POUR UN TITRE PROFESSIONNEL (TP)</h4>
+                <p>
+                    <strong>Avantage :</strong> Tu peux concevoir des formations pour préparer à n'importe quel TP sans autorisation spéciale. Le référentiel est public et gratuit.<br><br>
+                    <strong>Ton rôle :</strong><br>
+                    1. Récupérer le référentiel du TP sur le site du Ministère du Travail<br>
+                    2. Aligner tes contenus avec le référentiel (Indicateur 9 de Qualiopi)<br>
+                    3. Prévoir les évaluations selon les critères du TP
+                </p>
+            </div>
+            
+            <div class="warning-box">
+                <h4>⚠️ SI TU CONÇOIS UNE FORMATION POUR UNE CERTIFICATION PRIVÉE RNCP</h4>
+                <p>
+                    <strong>Questions à poser au client :</strong><br>
+                    1. "Êtes-vous le certificateur de cette certification ?"<br>
+                    2. "Êtes-vous partenaire agréé du certificateur ?"<br>
+                    3. "Avez-vous accès au référentiel de certification ?"<br>
+                    4. "Qui délivre le diplôme final ?"<br><br>
+                    <strong>Si le client n'est pas le certificateur ni son partenaire agréé :</strong><br>
+                    ❌ Il ne peut PAS délivrer la certification<br>
+                    ❌ Tu ne peux pas concevoir une formation "préparant à cette certification"<br><br>
+                    <strong>Alternative :</strong> ✅ Concevoir une formation NON CERTIFIANTE sur le même sujet
+                </p>
+            </div>
+            
+            <div class="info-box">
+                <h4>✅ SI TU CONÇOIS UNE FORMATION NON CERTIFIANTE</h4>
+                <p>
+                    <strong>Pas d'obligations supplémentaires.</strong><br><br>
+                    Tu crées la formation selon les besoins du client, avec les documents Qualiopi classiques :<br>
+                    • Objectifs pédagogiques mesurables<br>
+                    • Déroulé pédagogique détaillé et daté<br>
+                    • Outils d'évaluation<br>
+                    • Documentation e-learning (si applicable)
+                </p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="checklist">
+                <h3>🔗 Liens Utiles</h3>
+                <ul>
+                    <li>France Compétences (RNCP) : www.francecompetences.fr/rncp</li>
+                    <li>France Compétences (RS) : www.francecompetences.fr/rs</li>
+                    <li>Ministère du Travail (TP) : travail-emploi.gouv.fr</li>
+                    <li>Répertoire des CQP : www.francecompetences.fr/recherche/cqp</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="logo">SATISA FORMATION</div>
+            <p>Expert en conception pédagogique conforme Qualiopi</p>
+            <p>🌐 www.satisa-formation.fr | 💼 LinkedIn : Satisa Formation</p>
+        </div>
+    </div>
+</body>
+</html>

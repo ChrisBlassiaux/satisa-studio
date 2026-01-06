@@ -499,6 +499,116 @@ section {
   background: white;
 }
 
+/* Section Hébergement & domaine */
+.hosting-info {
+  background: #f8fcfb;
+  padding: 5rem 2rem;
+}
+
+.hosting-info .section-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hosting-banner {
+  border-radius: 12px;
+  border-left: 4px solid #15b4a2;
+  background: #e8f7f6;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.hosting-banner-label {
+  color: #15b4a2;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.hosting-banner-text {
+  color: #444;
+  font-size: 0.98rem;
+  margin-left: 0.4rem;
+}
+
+.hosting-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.hosting-card {
+  border-radius: 16px;
+  border: 1px solid #e8f7f6;
+  background: #ffffff;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+}
+
+.hosting-card-title {
+  font-size: 1.4rem;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.hosting-card p:not(.hosting-card-main) {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #555;
+  font-size: 0.98rem;
+}
+
+.hosting-card-sub {
+  font-size: 1rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.hosting-card-main {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #15b4a2;
+}
+
+.hosting-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hosting-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  background: #f8fcfb;
+  border: 1px solid #e8f7f6;
+  color: #444;
+  font-size: 0.98rem;
+}
+
+.hosting-price {
+  color: #15b4a2;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.hosting-note {
+  margin-top: 2.5rem;
+  text-align: center;
+  color: #777;
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .hosting-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .pricing-card {
   background: #f8fcfb;
   border: 2px solid #15b4a2;
